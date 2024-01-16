@@ -842,7 +842,7 @@ p {
     .gr39 {
         width: 335px;
         height: 500px;
-        display: hide;
+        /* display: hide; */
     }
 
     .gr39-desc {
@@ -850,6 +850,6 @@ p {
         height: 297px;
         /* margin-right: 500px; */
         margin: 0;
-        display: hide;
+        /* display: hide; */
     }
 }
