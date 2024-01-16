@@ -1,5 +1,6 @@
 /* g fonts */
 /* font-family: 'Mulish', sans-serif; */
+
 /* shared styles */
 header,
 main {
@@ -9,6 +10,13 @@ main {
 
 body {
     font-family: 'Mulish', sans-serif;
+}
+
+.primary-button {
+    background-color: #FF5400;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
 }
 
 /* header style */
@@ -73,7 +81,8 @@ body {
     position: relative;
     width: 30px;
     height: 4px;
-    background: #424247;
+    /* background: #424247; */
+    background: black;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -85,7 +94,8 @@ body {
     position: absolute;
     height: 4px;
     right: 0;
-    background: #424247;
+    /* background: #424247; */
+    background: black;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -135,11 +145,90 @@ body {
     /* box-shadow: -20px 0 40px rgba(0,0,0,0.3); */
 }
 
+/* end header sectiopn */
+
+/* start main section */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 174px;
+    height: 52px;
+    justify-content: space-evenly;
+}
+
+.find-now .search h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.input .form select {
+    width: 174px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.50);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.input input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.travel .input {
+    display: flex;
+    gap: 24px;
+    padding-top: 48px;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 800px;
+    /* height:84px;  */
+    padding: 16px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.travel {
+    border-radius: 16px;
+    width: 1170px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80), rgba(19, 19, 24, 0.00)), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    /* gap: 24px; */
+    text-align: center;
+
+}
+
+.travel-explore h1 {
+    /* margin-top: 106px; */
+    padding-top: 100px;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.travel-explore p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 676px;
+    padding-left: 247px;
+}
+
 
 
 /* responsive styles */
 /* for mobile */
 @media screen and (max-width:576px) {
+
+    header,
+    main {
+        max-width: 375px;
+        margin: 0 auto;
+    }
 
     .hamburger,
     .toggle-menu {
@@ -162,8 +251,9 @@ body {
         position: fixed;
         top: 0;
         right: -300px;
-        background: ;
+        background: #C0C0C0;
         width: 200px;
+
     }
 
     .menu li {
@@ -176,4 +266,51 @@ body {
         font-size: 18px;
 
     }
+
+    /* explore travel */
+    .travel {
+        width: 335px;
+        height: 483px;
+        margin: 0 auto;
+    }
+
+    .travel-explore h1 {
+        font-size: 22px;
+        padding-top: 32px;
+    }
+
+    .travel-explore p {
+        width: 304px;
+        height: 63px;
+        font-size: 14px;
+        padding: 0 0;
+        padding-left: 15px;
+    }
+
+    .travel .input {
+        display: flex;
+        width: 287px;
+        height: 288px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin: auto;
+    }
+
+    .input input {
+        width: 255px;
+        height: 52px;
+    }
+
+    .input .form select {
+        width: 255px;
+        height: 52px;
+    }
+
+    .input .search {
+        width: 242px;
+        height: 52px;
+    }
+
 }
