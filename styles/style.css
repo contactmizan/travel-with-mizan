@@ -268,6 +268,17 @@ li {
 }
 
 /* end our popular tours */
+.deals p {
+    width: 643px;
+    margin-left: 250px;
+}
+
+.deals {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
 .destination {
     margin-top: 170px;
 }
@@ -277,17 +288,78 @@ p {
     text-align: center;
 }
 
-.row {
+.destination p {
+    width: 643px;
+    height: 52px;
+    margin-left: 270px;
+}
+
+.desti-name {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.desti1 {
+    background-image: url(../Images/Rectangle\ 5.png);
+    width: 573px;
+    height: 300px;
+}
+
+.desti2 {
+    background-image: url(../Images/Rectangle\ 8.png);
+    width: 573px;
+    height: 300px;
+}
+
+.desti3 {
+    background-image: url(../Images/Rectangle\ 6.png);
+    width: 374px;
+    height: 286px;
+}
+
+.desti4 {
+    background-image: url(../Images/Rectangle\ 7.png);
+    width: 474px;
+    height: 286px;
+}
+
+.desti5 {
+    background-image: url(../Images/Rectangle\ 9.png);
+    width: 274px;
+    height: 286px;
+}
+
+.desti6 {
+    background-image: url(../Images/Rectangle\ 11.png);
+    width: 473px;
+    height: 300px;
+}
+
+.desti7 {
+    background-image: url(../Images/Rectangle\ 10.png);
+    width: 673px;
+    height: 300px;
+}
+
+.destination-place {
     display: flex;
-    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 48px;
 }
 
-.row1 {
+.desti1,
+.desti2,
+.desti3,
+.desti4,
+.desti5,
+.desti6,
+.desti7 {
     display: flex;
-    gap: 24px;
-    margin-top: 24px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
 }
 
 /* close destination styles */
